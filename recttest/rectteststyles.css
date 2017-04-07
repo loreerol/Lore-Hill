@@ -1,0 +1,34 @@
+svg {
+  height: 212px;
+  margin: 0;
+    padding:
+}
+.outline{
+    
+}
+.outline {
+  fill: lightblue;
+  stroke-dasharray: 350;
+  stroke-dashoffset: 100;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+svg:hover .outline {
+  stroke-dasharray: 310 0;
+  stroke-dashoffset: 0;
+}
+.outlineright {
+  fill: lightblue;
+  stroke-dasharray: 66;
+  stroke-dashoffset: 100;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+svg:hover .outlineright {
+  stroke-dasharray: 200 0;
+  stroke-dashoffset: 0;
+}

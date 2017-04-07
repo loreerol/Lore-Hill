@@ -1,0 +1,70 @@
+html {
+  background: white;
+}
+div{
+    position: fixed;
+    height: 212px;
+    width: 610px;
+    position: fixed;
+    left: 30%
+}
+.mainNav{
+    position: fixed;
+    top: 6;
+}
+
+[class="navBorder"] .outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  stroke: #7272f8;
+  stroke-width: 11px;
+  fill: none;
+}
+
+.navBorder .outline {
+  stroke-dasharray:   20  2600;
+  stroke-dashoffset: 600;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1;
+}
+.navBorder:hover .outline {
+  stroke-dasharray: 830 0;
+  stroke-dashoffset: 0;
+}
+
+
+/*corner to middle
+.navBorder .outline {
+  stroke-dasharray:  10  2000;
+  stroke-dashoffset: 400;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.navBorder:hover .outline {
+  stroke-dasharray: 1100 0;
+  stroke-dashoffset: 0;
+}
+
+/*corner to corner
+
+.navBorder .outline {
+  stroke-dasharray:  140 4000;
+  stroke-dashoffset: 1800;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+.navBorder:hover .outline {
+  stroke-dasharray: 800 0;
+  stroke-dashoffset: 0;
+}
+
+

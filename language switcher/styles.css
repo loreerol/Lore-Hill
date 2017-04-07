@@ -1,0 +1,37 @@
+
+
+input[type=radio] {
+	opacity: 0;
+}
+
+label { 
+  display: inline-block;
+  margin: 60px 0 10px 0;
+  cursor: pointer;
+}
+
+/* Default State */
+/* Toggled State */
+#english:checked ~ .wrapper .english{
+   display: block;
+}
+
+#english ~ .wrapper .english{
+   display: none;
+}
+
+#english:checked ~ .wrapper .german{
+  display: none;
+}
+
+#german ~ .wrapper .german{
+  display: none;
+}
+
+#german:checked ~ .wrapper .english{
+  display: none;
+}
+
+#german:checked ~ .wrapper .german{
+  display: block;
+}

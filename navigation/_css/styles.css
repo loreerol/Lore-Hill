@@ -1,0 +1,714 @@
+/* font declarations */ 
+
+/* Global Styles*/
+
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align:baseline;
+	font: inherit;
+}
+ul, li {
+    list-style: none;
+}
+li{
+    position: relative;
+}
+h1 {
+	font-size: 1.4em;
+	margin: .5em;
+	color: black;
+	font-weight: normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+h2 {
+	font-size: 3em;
+	margin-bottom: .5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+p {
+	margin-bottom: 1em;
+	line-height:1.6;
+}
+#whitespace {
+    padding: 100px;
+}
+
+#whitespacesm {
+    padding: 40px;
+}
+
+
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+html {
+	background: rgb(65, 64, 66);
+}
+body {
+	font: 100% DroidSans, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	font-weight:normal;
+	font-style:normal;
+    width: 1500px;
+	margin: 0 auto;
+	padding: 0;
+	font: 110% Arial, Helvetica, sans-serif;
+	background: white;
+    position: relative;
+}
+
+/*}
+body {
+	font: 100% DroidSans, Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	font-weight:normal;
+	font-style:normal;
+    width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	font: 110% Arial, Helvetica, sans-serif;
+	background: white;
+} */
+
+nav {
+    padding-left: 4em;
+    padding-bottom: 2em;
+}
+article {
+	clear: both;
+	margin-bottom: 3px;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* Global classes */
+
+/*clearfix */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+} 
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+/*Header styles */
+
+/* Nav Styles */
+
+#navone a {
+	margin: 0;
+    border-bottom: .125em solid yellow;
+    display: block;
+    width: 8em;
+    line-height: 2em;
+    font-size: 1em;
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: .2em 0 .2em 1em;  
+}
+#navone a:hover {
+    display: block;
+    width: 8em;
+    line-height: 2em;
+    font-size: 1em;
+    text-decoration: none;
+    background: yellow;
+    color: white;
+    padding: .2em 0 .2em 1em;
+    border-left: .4em solid white;
+    width: 7.6em;
+}
+#navone li:last-child a {
+    border-bottom: none;
+}
+/*--------*/
+#navtwo ul{
+    padding: 3em;
+}
+#navtwo a {
+     display: block;
+    width: 8em;
+    line-height: 2em;
+    font-size: 1em;
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: .2em 0 .2em 2em;
+    margin-bottom: .2em;  
+}
+#navtwo li a:hover, a:active {
+    background: yellow;
+    border-left: .4em solid yellow;
+    width: 7.6em; 
+}
+/*-------------------------------------------------------------------------3---*/
+
+/*#navthree li {
+    display: inline-block;
+}
+one way to do this but with less control then floating
+*/
+#navthree{
+    background: #57988b;
+    height: 2.3em;
+}
+#navthree ul li {
+    float: left;
+}
+#navthree ul{
+    background: #4dc9b1;
+    height: 2em;
+    width: 100%;
+}
+#navthree li a{
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    padding: 0em 1em;
+    margin-right: 0;
+}
+#navthree li a:hover {
+    background: #57988b;
+    height: 2em;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+}
+#navthree a.current, #navthree a.current:hover{
+    background: #908c8c;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+    border-bottom: .3em solid #676767;
+    cursor: default;
+}
+
+/* it's possible to create this tab effect using a negative top margin but that can create problems, its better to use relative position*/
+
+/* using floats can cause issues, they can cause their parent element to collapse
+or disrupt elements that come after them. use clear fix*/
+/*--------------------------------------------------------------------------4---*/
+
+#navfour {
+    background: #57988b;
+    height: 2.3em;
+}
+#navfour ul, #navfour li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#navfour li {
+    position: relative;
+}
+#navfour ul {
+    background: #4dc9b1;
+    height: 2em;
+    width: 100%;
+}
+#navfour li a {
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    color: white;
+    padding: 0em 1em;
+}
+#navfour li a:hover, #navfour .topmenu li:hover > a {
+    background: #57988b;
+    height: 2em;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+}
+#navfour .current, #navfour a:hover.current, #navfour .topmenu li:hover a.current {
+    background: #908c8c;
+    color: #eee;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+    border-bottom: .3em solid #676767;
+    cursor: default;
+}
+#navfour ul.submenu {
+    float: none;
+    background: #57988b;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 2em;
+    left: -9000em;
+    max-height: 0;
+    -moz-transition:max-height 0.5s ease-in-out;
+	-webkit-transition:max-height 0.5s ease-in-out;
+	-o-transition:max-height 0.5s ease-in-out;
+	transition:max-height 0.5s ease-in-out;
+	overflow: hidden;
+}
+#navfour ul.submenu li {
+    float: none;
+}
+#navfour .topmenu li:hover ul {
+    left: 0;
+    max-height: 10em;
+}
+#navfour ul.submenu li a {
+    border-bottom: 1px solid white;
+    padding: .2em 1em;
+    white-space: nowrap;
+}
+#navfour ul.submenu li:last-child a {
+   border-bottom: none; 
+}
+#navfour ul.submenu li a:hover{
+    background: #4dc9b1;
+    height: 2em;
+    padding-top: .2em;
+    top: 0;
+    border-radius: 0;
+}
+/* make sure li{position: relative;} when using absolute positioning to hide/show for submenus. absolute positioning also removes the item from document flow, it is being here to prevent the tab look from pushing the submenu item down*/
+/*
+
+/*-------------------------------------------------------------------------5----*/
+
+#navfive h1 a {
+	display: block;
+	width: 160px;
+	height: 152px;
+    padding: 0px;
+}
+#navfive h1{
+	width: 160px;
+	height: 152px;
+	text-indent: -9000em;
+	float: left;
+	background-image: url(../_images/dwdsm.jpg);
+    padding: 0px;
+    margin: 0px;
+    z-index: 5;
+}
+#navfive {
+	background: rgba(35, 31, 32, .8);
+	height: 40px;
+	width: 1500px;
+	float: left;
+}
+#navfive ul {
+	list-style:none;
+	margin-left: 16px;
+    padding: 5px 0 0 0;
+    float: left;
+}
+#navfive li {
+	float: left;
+	margin-right: 27px;
+}
+#navfive li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 0 40px;
+	line-height: 35px;
+	font-size: .9em;
+	text-transform:lowercase;
+}
+#navfive li a:hover {
+	color: rgb(251, 174, 44);
+	background: none;
+}
+
+/*-----------------------------------------------------------------------6-----*/
+
+#divnavsix h1 {
+	width: 160px;
+	height: 150px;
+	text-indent: -9000em;
+	float: left;
+	background: black url(../_images/dwdsm.jpg) no-repeat;
+	z-index: 5;
+	margin: 0;
+}
+#divnavsix h1 a {
+	display: block;
+	width: 160px;
+	height: 150px;
+	margin: 0;
+}
+#divnavsix h1 a:hover {
+	background: none;
+}
+
+#divnavsix #navsix {
+	background: rgba(35, 31, 32, .8);
+	height: 40px;
+	width: 1340px;
+	padding: 5px 0 0;
+	float: left;
+	position: relative;
+}
+#divnavsix ul {
+	list-style: none;
+	margin-left: 32px;
+}
+#divnavsix li {
+	float: left;
+	margin-right: 24px;
+}
+#divnavsix li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 0 20px;
+	line-height: 40px;
+	font-size: .9em;
+	text-transform: lowercase;
+}
+
+#divnavsix li a:hover, #divnavsix .topmenu li:hover a {
+	color: rgb(251, 174, 44);
+	background: none;
+}
+#divnavsix a.current, #divnavsix a.current:hover, #divnavsix li:hover a.current {
+	background: rgba(242, 242, 242, .8);
+	color: black;
+	border-radius: 5px 5px 0 0;
+	cursor: default;
+}
+#divnavsix ul.submenu {
+	float: none;
+	background: rgba(242, 242, 242, .8); 
+	width: 1340px;
+	height: auto;
+	position: absolute;
+	top: 40px;
+	left: -9000px;
+	margin: 0;
+	opacity: 0;
+	-moz-transition:opacity 0.5s ease-in-out;
+	-webkit-transition:opacity 0.5s ease-in-out;
+	-o-transition:opacity 0.5s ease-in-out;
+	transition:opacity 0.5s ease-in-out;
+    
+}
+#divnavsix li.current ul.submenu, #divnavsix #navsix:hover li.current ul.submenu:hover, #divnavsix #navsix:hover li.current:hover ul.submenu {
+	left: 0;
+	opacity: 1;
+}
+#divnavsix #navsix:hover li.current ul.submenu {
+	left: -9000px;
+}
+#divnavsix .topmenu li:hover ul {
+	left: 0;
+	opacity: 1;
+}
+#divnavsix ul.submenu li a {
+	color: black;
+	line-height: 50px;
+}
+#divnavsix ul.submenu li a:hover {
+	color: rgb(168, 88, 163);
+}
+
+
+
+/*#divnavsix nav {
+	background: rgba(35, 31, 32, .8);
+	height: 40px;
+	width: 1500px;
+	float: left;
+    position: relative;
+    margin: 0px;
+	padding: 0px;
+    vertical-align: baseline;
+}
+#divnavsix h1{
+	width: 160px;
+	height: 152px;
+	float: left;
+	background-image: url(../_images/dwdsm.jpg);
+    padding: 0px;
+    margin: 0px;
+    z-index: 5;
+}
+#divnavsix h1 a {
+	display: block;
+	width: 160px;
+	height: 152px;
+    padding: 0px;
+	float: left;
+	background: black url(../_images/dwdsm.jpg) no-repeat;
+	z-index: 5;
+	margin: 0;
+}
+
+#divnavsix h1 a:hover{
+    background: none;
+}
+#divnavsix ul {
+	list-style:none;
+    padding: 5px 0 0;
+    float: left;
+}
+#divnavsix li {
+	float: left;
+	margin-right: 35px;
+    margin-left: 35px;
+}
+#divnavsix .submenu li {
+    margin-left: 0;
+}
+#divnavsix li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 0 20px;
+	line-height: 35px;
+	font-size: .9em;
+	text-transform:lowercase;
+}
+#divnavsix li a:hover, .topmenu li:hover a {
+	color: rgb(251, 174, 44);
+	background: none;
+}
+#divnavsix a.current, #navsix a.current:hover, #navsix .topmenu li:hover a.current {
+	background: rgba(242, 242, 242, .8);
+	color: black;
+	border-radius: 5px 5px 0 0;
+	cursor: default;
+}
+#divnavsix  a.current, #navesix a.current:hover, #navsix .topmenu li:hover a.current {
+	background: rgba(77, 201, 177, 0.58);
+	color: black;
+	border-radius: 5px 5px 0 0;
+	cursor: default;
+}
+
+#divnavsix li.current ul.submenu, #navsix:hover li.current ul.submenu:hover, #navsix:hover li.current:hover ul.submenu {
+	left: 0;
+	opacity: 1;
+}
+#navsix  ul.submenu {
+	float: none;
+	background: rgba(77, 201, 177, 0.58); 
+	width: 1500px;
+	height: auto;
+	position: absolute;
+	top: 35px;
+	left: -9000px;
+    margin: 0;
+	opacity: 100%;
+	-moz-transition:opacity 0.5s ease-in-out;
+	-webkit-transition:opacity 0.5s ease-in-out;
+	-o-transition:opacity 0.5s ease-in-out;
+	transition:opacity 0.5s ease-in-out;
+}
+
+#navsix li.current ul.submenu,  #navsix:hover li.current ul.submenu:hover, #navsix:hover li.current:hover ul.submenu {
+	left: 0;
+	opacity: 1;
+}
+#navsix:hover li.current ul.submenu {
+	left: -9000px;
+}
+#navsix .topmenu li:hover ul {
+	left: 0;
+	opacity: 1;
+    padding: 0px;
+}
+#navsix ul.submenu li a {
+	color: black;
+	line-height: 40px;
+}
+#navsix ul.submenu li a:hover {
+	color: rgb(168, 88, 163);
+}
+
+
+
+/*
+#navsix li.current ul.submenu, #navsix div:hover li.current ul.submenu:hover, #navsix div:hover li.current:hover ul.submenu {
+	left: 0;
+	opacity: 1;
+}
+#navsix div:hover li.current ul.submenu {
+	left: -9000px;
+}
+navsix .topmenu li:hover ul {
+	left: 0;
+	opacity: 1;
+}
+#navsix ul.submenu li a {
+	color: black;
+	line-height: 50px;
+}
+#navsix ul.submenu li a:hover {
+	color: rgb(168, 88, 163);
+}
+
+/*----------------------------------------------------------------------7--*/
+
+.button {
+	color: white;
+	padding: 0 1em;
+    margin: 20px;
+	height: 2.4em;
+	display: table;
+	border: 1px solid rgb(32, 124, 202);
+	font-family: Helvetica, sans-serif;
+	font-weight: 100;
+	font-size: 1em;
+	text-transform: lowercase;
+	letter-spacing: .045em;
+	line-height: 2.4em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	border-radius: .325em;
+	-webkit-box-shadow:inset 0px 1px 3px rgb(162,200,229);
+	box-shadow:inset 0px 1px 3px rgb(162,200,229);
+	background: rgb(30,87,153); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(30,87,153) 0%, rgb(41,137,216) 50%, rgb(32,124,202) 51%, rgb(125,185,232) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(30,87,153)), color-stop(50%, rgb(41,137,216)), color-stop(51%, rgb(32,124,202)), color-stop(100%, rgb(125,185,232))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgb(30,87,153) 0%, rgb(41,137,216) 50%, rgb(32,124,202) 51%, rgb(125,185,232) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgb(30,87,153) 0%, rgb(41,137,216) 50%, rgb(32,124,202) 51%, rgb(125,185,232) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgb(30,87,153) 0%, rgb(41,137,216) 50%, rgb(32,124,202) 51%, rgb(125,185,232) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgb(30,87,153) 0%, rgb(41,137,216) 50%, rgb(32,124,202) 51%, rgb(125,185,232) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0 ); /* IE6-9 */
+}
+
+.button:hover {
+	background: rgb(125,185,232); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(125,185,232) 0%, rgb(32,124,202) 49%, rgb(41,137,216) 50%, rgb(30,87,153) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(125,185,232)), color-stop(49%, rgb(32,124,202)), color-stop(50%, rgb(41,137,216)), color-stop(100%, rgb(30,87,153))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgb(125,185,232) 0%, rgb(32,124,202) 49%, rgb(41,137,216) 50%, rgb(30,87,153) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgb(125,185,232) 0%, rgb(32,124,202) 49%, rgb(41,137,216) 50%, rgb(30,87,153) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgb(125,185,232) 0%, rgb(32,124,202) 49%, rgb(41,137,216) 50%, rgb(30,87,153) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgb(125,185,232) 0%, rgb(32,124,202) 49%, rgb(41,137,216) 50%, rgb(30,87,153) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799', GradientType=0 ); /* IE6-9 */
+ color: rgb(212,212,225);
+}
+
+.button:active, .button:focus {
+	background: rgb(21,61,107); /* Old browsers */
+	background: -moz-linear-gradient(top, rgb(21,61,107) 0%, rgb(28,96,152) 50%, rgb(23,86,141) 51%, rgb(38,137,212) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(21,61,107)), color-stop(50%, rgb(28,96,152)), color-stop(51%, rgb(23,86,141)), color-stop(100%, rgb(38,137,212))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgb(21,61,107) 0%, rgb(28,96,152) 50%, rgb(23,86,141) 51%, rgb(38,137,212) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgb(21,61,107) 0%, rgb(28,96,152) 50%, rgb(23,86,141) 51%, rgb(38,137,212) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgb(21,61,107) 0%, rgb(28,96,152) 50%, rgb(23,86,141) 51%, rgb(38,137,212) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgb(21,61,107) 0%, rgb(28,96,152) 50%, rgb(23,86,141) 51%, rgb(38,137,212) 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#153d6b', endColorstr='#2689d4', GradientType=0 ); /* IE6-9 */
+	color: white;
+}
+
+*/------------------------------------------------------------------------8---*/
+
+#naveight {
+    background: #57988b;
+    height: 2.3em;
+
+}
+#naveight ul, #naveight li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#naveight li {
+    position: relative;
+    padding: 0 20px;
+    margin: 0 30px;
+}
+#naveight ul {
+    background: #4dc9b1;
+    height: 2em;
+    width: 100%;
+}
+#naveight li a {
+    line-height: 2em;
+    display: block;
+    text-decoration: none;
+    background: url(../_assets/icon_sprites_25.ai) no-repeat 2px 7px;
+    color: white;
+    
+}
+#naveight li a:hover, #naveight .topmenu li:hover > a {
+    background: #57988b;
+    height: 2em;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+}
+#naveight .current, #naveight a:hover.current, #navfour .topmenu li:hover a.current {
+    background: rgba(144, 140, 140, 0.79);
+    color: #eee;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+    border-bottom: .3em solid rgba(103, 103, 103, 0.69);
+    cursor: default;
+}
+#naveight ul.submenu {
+    float: none;
+    background: #57988b;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 2em;
+    left: -9000em;
+    max-height: 0;
+    -moz-transition:max-height 0.5s ease-in-out;
+	-webkit-transition:max-height 0.5s ease-in-out;
+	-o-transition:max-height 0.5s ease-in-out;
+	transition:max-height 0.5s ease-in-out;
+	overflow: hidden;
+}
+#naveight ul.submenu li {
+    float: none;
+}
+#naveight .topmenu li:hover ul {
+    left: 0;
+    max-height: 10em;
+    margin: 0 2em;
+}
+#naveight ul.submenu li a {
+    border-bottom: 1px solid white;
+    padding: .2em 1em;
+    white-space: nowrap;
+}
+#naveight ul.submenu li:last-child a {
+   border-bottom: none; 
+}
+#naveight ul.submenu li a:hover{
+    background: #4dc9b1;
+    height: 2em;
+    padding-top: .2em;
+    top: 0;
+    border-radius: 0;
+}
+
+

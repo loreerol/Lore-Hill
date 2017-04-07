@@ -1,0 +1,63 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../_images/stripe_c3d80647da3fe8b52701b42afca6fca6.png); 
+    background-attachment:fixed;
+    margin: 0;  
+}
+
+header, footer{
+    width: 100%;
+  padding: 0;
+  display: table;
+  margin: 0;
+  max-width: none;
+
+}
+header{
+    height: 90vh;
+}
+
+footer{
+   height: 40vh;
+}
+main{
+    width: 100%;
+    height: 2000px;
+    background-color: #f2f1f1;
+    padding: 0px;
+    margin: 0px;
+    max-width: none;
+    display: table; 
+}
+nav, section{
+    height: 400px;
+    width: 655px;
+    position: fixed; 
+}
+    
+nav{
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4%;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    
+}
+section{
+    border: 3px solid black;
+    left: 51%;
+    transform: translateX(-50%);
+    margin-top: 5%;
+    background-color: white;
+    position: fixed;
+    z-index: 3;
+    background-color: transparent;
+}
+footer{
+    
+}

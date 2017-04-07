@@ -1,0 +1,46 @@
+* Checkbox Hack */
+
+checkbox{   
+    display: none;
+}
+label{
+    background: white;
+    text-decoration: none;
+}
+
+
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+label { 
+  display: inline-block;
+  margin: 60px 0 10px 0;
+  cursor: pointer;
+    border: none;
+}
+
+
+/* Default State */
+div {
+   background: white;
+   width: 400px;
+   height: 100px;
+   line-height: 100px;
+   color: black;
+   text-align: center;
+}
+
+/* Toggled State */
+#german{
+    display: none;
+}
+
+input[type=checkbox]:checked ~ #english {
+   display: none;
+}
+input[type=checkbox]:checked ~ #german {
+   display: block;
+}
+
